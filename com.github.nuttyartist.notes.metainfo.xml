@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.nuttyartist.notes</id>
+  <launchable type="desktop-id">com.github.nuttyartist.notes.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MPL-2.0</project_license>
+  <name>Notes</name>
+  <developer_name>Ruby Mamistvalove</developer_name>
+  <summary>Note-taking application, write down your thoughts.</summary>
+  <description>
+    <p>
+      Notes is an open source and cross-platform note-taking app that is both beautiful and powerful.
+    </p>
+  </description>
+  <screenshots>
+  <screenshot type="default">
+      <image>https://static.wixstatic.com/media/7c1dce_33be6cf214834f2ebf191d234eaf04df~mv2.png/v1/fill/w_918,h_641,al_c,q_90,enc_auto/linux%20new%202.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">http://get-notes.com/</url>
+  <url type="bugtracker">https://github.com/nuttyartist/notes/issues</url>
+  <url type="donation">https://github.com/sponsors/nuttyartist</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="2.0.0" date="2022-09-08"/>
+  </releases>
+</component>

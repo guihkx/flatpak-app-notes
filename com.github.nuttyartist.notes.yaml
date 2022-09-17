@@ -1,0 +1,33 @@
+id: com.github.nuttyartist.notes
+runtime: org.kde.Platform
+runtime-version: 5.15-22.08
+sdk: org.kde.Sdk
+command: notes
+rename-desktop-file: notes.desktop
+rename-icon: notes
+finish-args:
+  - --share=ipc
+  - --share=network # Required for the update check feature.
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --filesystem=xdg-config/autostart:create # Required for the autostart feature.
+modules:
+  - name: notes
+    buildsystem: qmake
+    sources:
+      - type: git
+        url: https://github.com/nuttyartist/notes.git
+        tag: v2.0.0
+        commit: fa81b1b59b784fcc193102e91fe593a9bf209845
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+      - type: file
+        path: com.github.nuttyartist.notes.metainfo.xml
+      # Required for the autostart feature.
+      - type: patch
+        path: flatpak-autostart.patch
+    post-install:
+      - install -Dm644 com.github.nuttyartist.notes.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 packaging/linux/common/notes.desktop -t /app/share/applications
+      - install -Dm644 packaging/linux/common/icons/scalable/notes.svg -t /app/share/icons/hicolor/scalable/apps
