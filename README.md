@@ -20,4 +20,5 @@ flatpak install notes.flatpak
 - [ ] Proper support for the autostart feature. (Needs https://github.com/nuttyartist/notes/pull/345)
 - [ ] Once the above is done, get rid of `flatpak-autostart.patch`.
 - [ ] Check with upstream developers if `com.github.nuttyartist.notes` is their preferred app id.
+- [ ] Use a better screenshot, preferably one taken on Linux.
 - [ ] Find a volunteer who's willing to [submit](https://github.com/flathub/flathub/blob/master/CONTRIBUTING.md) Notes to Flathub and maintain it. If you're interested, just do it!
