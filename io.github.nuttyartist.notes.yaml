@@ -5,12 +5,13 @@ sdk: org.kde.Sdk
 command: notes
 rename-desktop-file: notes.desktop
 rename-icon: notes
+
 finish-args:
   - --share=ipc
   - --share=network # Required for the update check feature.
-  - --socket=fallback-x11
-  - --socket=wayland
+  - --socket=x11
   - --filesystem=xdg-config/autostart:create # Required for the autostart feature.
+
 modules:
   - name: notes
     buildsystem: qmake
