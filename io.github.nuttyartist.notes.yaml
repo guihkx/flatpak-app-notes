@@ -1,4 +1,4 @@
-id: com.github.nuttyartist.notes
+id: io.github.nuttyartist.notes
 runtime: org.kde.Platform
 runtime-version: 5.15-22.08
 sdk: org.kde.Sdk
@@ -23,11 +23,11 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: file
-        path: com.github.nuttyartist.notes.metainfo.xml
+        path: io.github.nuttyartist.notes.metainfo.xml
       # Required for the autostart feature.
       - type: patch
         path: flatpak-autostart.patch
     post-install:
-      - install -Dm644 com.github.nuttyartist.notes.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 io.github.nuttyartist.notes.metainfo.xml -t /app/share/metainfo
       - install -Dm644 packaging/linux/common/notes.desktop -t /app/share/applications
       - install -Dm644 packaging/linux/common/icons/scalable/notes.svg -t /app/share/icons/hicolor/scalable/apps
