@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2022 Ruby Mamistvalove -->
 <component type="desktop-application">
   <id>io.github.nuttyartist.notes</id>
   <launchable type="desktop-id">io.github.nuttyartist.notes.desktop</launchable>
