@@ -13,6 +13,22 @@
     <p>
       Notes is an open source and cross-platform note-taking app that is both beautiful and powerful.
     </p>
+    <p>
+      Features overview:
+    </p>
+    <ul>
+      <li>Native app (written in C++ with Qt).</li>
+      <li>Fast with a low memory footprint.</li>
+      <li>Fully open source and cross-platform (Linux, macOS, Windows).</li>
+      <li>Completely private - tracks nothing.</li>
+      <li>Beautiful and sleek looking, yet still powerful.</li>
+      <li>Folders and tags. Organize your ideas hierarchically using nested folders and universally using tags.</li>
+      <li>Markdown Support. Format text without lifting your hands from the keyboard.</li>
+      <li>Different themes. Switch between Light, Dark, and Sepia.</li>
+      <li>Feed View. Select multiple notes to see them all one after another in the editor.</li>
+      <li>Always runs in the background. Use the hotkey "Windows" + 'N' to summon Notes. "control" + "N" for macOS.</li>
+      <li>Keyboard shortcuts. Meant to have the option to be used solely with a keyboard (but more work needs to be done there).</li>
+    </ul>
   </description>
   <screenshots>
   <screenshot type="default">
