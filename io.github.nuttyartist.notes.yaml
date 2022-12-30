@@ -8,7 +8,6 @@ rename-icon: notes
 
 finish-args:
   - --share=ipc
-  - --share=network # Required for the update check feature.
   - --socket=x11
   - --filesystem=xdg-config/autostart:create # Required for the autostart feature.
 
