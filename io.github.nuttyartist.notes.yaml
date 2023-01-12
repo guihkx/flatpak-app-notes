@@ -1,10 +1,8 @@
 app-id: io.github.nuttyartist.notes
 runtime: org.kde.Platform
-runtime-version: 5.15-22.08
+runtime-version: '6.4'
 sdk: org.kde.Sdk
 command: notes
-rename-desktop-file: notes.desktop
-rename-icon: notes
 
 finish-args:
   - --share=ipc
@@ -13,18 +11,15 @@ finish-args:
 
 modules:
   - name: notes
-    buildsystem: qmake
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DUPDATE_CHECKER=OFF
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
-        tag: v2.0.0
-        commit: fa81b1b59b784fcc193102e91fe593a9bf209845
+        tag: v2.1.0
+        commit: 1ca5ea77bd8e1044b4fa8fd71166cf69904e09f5
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: file
-        path: io.github.nuttyartist.notes.metainfo.xml
-    post-install:
-      - install -Dm644 io.github.nuttyartist.notes.metainfo.xml -t /app/share/metainfo
-      - install -Dm644 packaging/linux/common/notes.desktop -t /app/share/applications
-      - install -Dm644 packaging/linux/common/icons/scalable/notes.svg -t /app/share/icons/hicolor/scalable/apps

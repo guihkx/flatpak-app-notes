@@ -20,11 +20,6 @@ flatpak install notes_*-x86_64.flatpak
 
 And you're good to go. You should find Notes in your apps list.
 
-# TODO
-
-- [ ] Replace `--socket=x11` by `--socket=fallback-x11` and `--socket=wayland` once https://github.com/nuttyartist/notes/issues/429 gets addressed.
-- [ ] Upstream the AppStream metadata (`io.github.nuttyartist.notes.metainfo.xml`).
-
 # Advanced
 
 ## Building
