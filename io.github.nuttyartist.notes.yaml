@@ -12,7 +12,14 @@ finish-args:
 
 modules:
   - name: notes
-    buildsystem: qmake
+    build-options:
+      no-debuginfo: true
+    buildsystem: simple
+    build-commands:
+      - mkdir build
+      - cd build && qmake -config debug ../src/Notes.pro
+      - cd build && make -j$(nproc)
+      - install -Dm755 build/notes -t /app/bin
     sources:
       - type: git
         url: https://github.com/nuttyartist/notes.git
