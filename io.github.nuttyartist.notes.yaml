@@ -9,6 +9,7 @@ rename-icon: notes
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --talk-name=org.kde.StatusNotifierWatcher
 
 modules:
   - name: notes
