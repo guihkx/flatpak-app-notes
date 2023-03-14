@@ -1,3 +1,7 @@
+# Archived
+
+This has been upstreamed at: https://github.com/flathub/io.github.nuttyartist.notes
+
 # About
 
 Notes is an open source and cross-platform note-taking app that is both beautiful and powerful.
